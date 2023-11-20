@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link trl="stylesheet" href="media-icons.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Portfolio_Hazel</title>
 </head>
 
 <body>
     <!--Here star the header of the site, dont forget apply "possition:fixed" to have a sticky bar-->
     <header>
-        <div class="nav_bar">
+        <div class="nav-bar">
             <div class="logo">
                 <img src="" alt="">
             </div>
             <nav class="menu-container">
-                <ul class="container">
-                    <li class="nav-item"> <a href="#about">About</a></li>
-                    <li class="nav-item"> <a href="#knowledge">Knowledge</a></li>
-                    <li class="nav-item"> <a href="#projects">Projects</a></li>
-                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                <ul class="nav-list">
+                    <li class="nav-item"> <a href="#about">ABOUT</a></li>
+                    <li class="nav-item"> <a href="#knowledge">KNOWLEDGE</a></li>
+                    <li class="nav-item"> <a href="#projects">PROJECTS</a></li>
+                    <li class="nav-item button"><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,13 +33,15 @@
     <section class="section section-about" id="about">
         <div class="area-presentation">
             <div class="about-info">
-                <h1 class="about-name">Hazel</h1>
-                <p class="about-description">
-                    Industrial designer, front end developer and UI/UX designer. Plant and cat lover
+                <h1 class="about-name">Hi! I'm 
+                    <span class="my-name">HAZEL</span></h1>
+                <p class="about-description">Industrial designer, front end developer and UI/UX designer. 
+                Plant and cat lover.
                 </p>
-                <a href="#projects" class="button">What I do</a>
+                <a href="#projects" class="about-button">WHAT I DO</a>
             </div>
-            <img src="logo o icono" alt="" class="about-img" />
+          <img src="Image/designer.svg" alt="" class="about-img" /
+            
         </div>
         </div>
     </section>
@@ -48,37 +51,37 @@
     <section class="section section-knowledge" id="knowledge">
         <div class="knowledge-content">
             <h2>My Knowledge</h2>
-            <p class="knowledge-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate
-                tenetur officia a.</p>
+            <p class="knowledge-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ea voluptate tenetur officia a.</p>
             <div class="grid skills-grid">
                 <div class="skill-item">
                     <i class="devicon-html5-plain colored"></i>
-                    <p>HTML 5</p>
+                    <span>HTML 5</span>
                 </div>
 
                 <div class="skill-item">
                     <i class="devicon-css3-plain colored"></i>
-                    <p>CSS 3</p>
+                    <span>CSS 3</span>
                 </div>
 
                 <div class="skill-item">
                     <i class="devicon-sass-original colored"></i>
-                    <p>Sass</p>
+                    <span>Sass</span>
                 </div>
 
                 <div class="skill-item">
                     <i class="devicon-javascript-plain colored"></i>
-                    <p>JavaScript</p>
+                    <span>JavaScript</span>
                 </div>
 
                 <div class="skill-item">
                     <i class="devicon-react-original colored"></i>
-                    <p>React</p>
+                    <span>React</span>
                 </div>
 
                 <div class="skill-item">
                     <i class="devicon-git-plain colored"></i>
-                    <p>Git</p>
+                    <span>Git</span>
                 </div>
             </div>
         </div>
@@ -99,47 +102,47 @@
     <section class="section section-projects" id="projects">
         <h2 class="section-title"> My Projects</h2>
         <p class="projects-paragraph"> During my career as a Frontend developer I have carried out multiple projects,
-            among which the following stand out:</p>
+        among which the following stand out:</p>
         <div class="grid projects-grid">
             <a class="project" href="index.html"></a>
             <img src="Image/portfolio.svg" alt="Portfolio">
-            <p class="project-name">Portfolio</p>
+            <span class="project-name">Portfolio</span>
         </div>
 
         <div class="grid projects-grid">
             <a class="project" href="construction.html"></a>
             <img src="Image/meme-generatos-cat.svg" alt="Memes_generator">
-            <p class="project-name">Memes Generator</p>
+            <span class="project-name">Memes Generator</span>
         </div>
 
         <div class="grid projects-grid">
             <a class="project" href="construction.html"></a>
             <img src="Image/match_3.svg" alt="Match_3">
-            <p class="project-name">Match 3</p>
+            <span class="project-name">Match 3</span>
         </div>
 
         <div class="grid projects-grid">
             <a class="project" href="construction.html"></a>
             <img src="Image/expense-control.svg" alt="expense_controller">
-            <p class="project-name">Expense Controller</p>
+            <span class="project-name">Expense Controller</span>
         </div>
 
         <div class="grid projects-grid">
             <a class="project" href="construction.html"></a>
             <img src="Image/meeting_ manager.svg" alt="meeting_manager">
-            <p class="project-name">Meeting Manager</p>
+            <span class="project-name">Meeting Manager</span>
         </div>
 
         <div class="grid projects-grid">
             <a class="project" href="construction.html"></a>
             <img src="Image/app.svg" alt="all_app">
-            <p class="project-name">All App</p>
+            <span class="project-name">All App</span>
         </div>
 
         <div class="grid projects-grid">
             <a class="project" href="construction.html"></a>
             <img src="Image/movie-search.svg" alt="movie_search">
-            <p class="project-name">Movie Search</p>
+            <span class="project-name">Movie Search</span>
         </div>
 
     </section>
@@ -150,7 +153,7 @@
         <div class="contact-me-container">
             <h2 class="contact-title">Contact me!</h2>
             <p class="contact-paragraph">If you liked my work and if you want to know a little more, don't hesitate to
-                contact me!</p>
+            contact me!</p>
             <!--icons:https://iconos8.es/icons/set/linkedin--static--c-ca1f7b
             https://fontawesome.com/icons/square-x-twitter?f=brands&s=solid&pc=%23ca1f7b-->
             <div class="social-container">
