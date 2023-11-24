@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/agency-fb');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
                 
 
 
@@ -27,6 +28,7 @@ header{
     background-color: white;
     font-size: large;
     color: grey;
+    font-family: Handlee;
 }
 
 .nav-bar{
@@ -74,8 +76,9 @@ a{
 .section-about{
     margin-top: 90px;
     background-color: white;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
 }
+
 
 .area-presentation{
     display: flex;
@@ -120,18 +123,20 @@ color: grey;
     letter-spacing: 2px;
     padding: 15px 40px;
     margin-top: 15px;
-
 }
 
 
 .about-img{
     max-width: 500px;
     margin-left: 50px;
-
 }
 
 .section-knowledge{
     background-color: rgb(248, 248, 248);
+}
+
+.knowledge-description{
+    color: grey;
 }
 
 
@@ -150,10 +155,10 @@ color: grey;
 }
 
 p{
-    font-size: 20px;
-    color: grey;
+    font-size: 25px;
     text-align: center;
     white-space: pre;
+    margin-top: 10px;
 }
 
 .grid{
@@ -165,6 +170,10 @@ p{
 .skills-grid{
     width: 100%;
     justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-gap: 1.5em;
 }
 
 .skill-item{
@@ -180,13 +189,22 @@ p{
 }
 
 .skill-item i{
-    font-size: 75px;
+    font-size: 80px;
 }
 
 .item-name{
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 20px;
+}
 
+.section-phrase{
+    background-color: #CA1F7B;
+    color:white;
+}
+
+.phrase{
+    font-size: 40px;
+    font-family: Handlee;
 }
 
 .projects-grid{
@@ -199,14 +217,11 @@ p{
     display: block;
     text-align: center;
     align-content: center;
-
-
+    color: grey;
 }
 
-
-
 .project{
-    width: calc(100% / 3 - (0.75em * 2));
+    width: calc(100% / 3 - (4em * 2));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -214,10 +229,12 @@ p{
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     padding: 2em;
+
 }
 
 .projects {
     width: 100%;
+    justify-content: center;
 }
 
 .project img {
@@ -227,7 +244,7 @@ p{
 }
 
 .project-name{
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 20px;
 }
 
