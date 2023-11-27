@@ -1,70 +1,63 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-
-
-@mixin transformScale($size: 1) {
-    transform: scale($size);
-    -ms-transform: scale($size);
-    -webkit-transform: scale($size);
+ body {
+	 background-color: rgba(202, 31, 123, 0.05);
+}
+ .social-container {
+	 text-align: center;
+}
+ .social-icons {
+	 padding: 0;
+	 list-style: none;
+	 margin: 1em;
+}
+ .social-icons li {
+	 display: inline-block;
+	 margin: 0.15em;
+	 position: relative;
+	 font-size: 1.2em;
 }
 
-body {
-    background-color: rgba(#CA1F7B, 0.05);
+.social-icons-small li {
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 1em;
 }
 
-.social-container {
-    width: 400px;
-    margin: 40vh auto;
-    text-align: center;
+ .social-icons i {
+	 color: #fff;
+	 position: absolute;
+	 top: 21px;
+	 left: 21px;
+	 transition: all 265ms ease-out;
 }
-
-.social-icons {
-    padding: 0;
-    list-style: none;
-    margin: 1em;
-  
-    li {
-        display: inline-block;
-        margin: 0.15em;
-        position: relative;
-        font-size: 1.2em;
-
-    }
-
-    i {
-        color: #fff;
-        position: absolute;
-        top: 21px;
-        left: 21px;
-        transition: all 265ms ease-out;
-    }
-
-    a {
-        display: inline-block;
-      
-        &:before {
-            @include transformScale();
-            content: " ";
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
-            display: block;
-            background: linear-gradient(45deg, #CA1F7B, #CA1F7B);
-            transition: all 265ms ease-out;
-        }
-        
-        &:hover:before {
-            transform: scale(0);
-            transition: all 265ms ease-in;
-        }
-        
-        &:hover i {
-            @include transformScale(2.2);
-            color: #CA1F7B;
-            background: -webkit-linear-gradient(45deg, #CA1F7B, #CA1F7B);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all 265ms ease-in;
-        }
-    }
-  
+ .social-icons a {
+	 display: inline-block;
 }
+ .social-icons a:before {
+	 transform: scale(1);
+	 -ms-transform: scale(1);
+	 -webkit-transform: scale(1);
+	 content: " ";
+	 width: 60px;
+	 height: 60px;
+	 border-radius: 100%;
+	 display: block;
+	 background: linear-gradient(45deg, #ca1f7b, #ca1f7b);
+	 transition: all 265ms ease-out;
+}
+ .social-icons a:hover:before {
+	 transform: scale(0);
+	 transition: all 265ms ease-in;
+}
+ .social-icons a:hover i {
+	 transform: scale(2.2);
+	 -ms-transform: scale(2.2);
+	 -webkit-transform: scale(2.2);
+	 color: #ca1f7b;
+	 background: -webkit-linear-gradient(45deg, #ca1f7b, #ca1f7b);
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 transition: all 265ms ease-in;
+}
+ 

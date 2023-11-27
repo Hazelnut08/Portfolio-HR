@@ -66,6 +66,7 @@ a{
 /*no esta tomando el blanco*/
 }
 
+
 .section {
     display: flex;
     justify-content: center;
@@ -86,6 +87,8 @@ a{
     align-items: center;
 
 }
+
+
 
 .about-info{
     width: 100%;
@@ -253,21 +256,117 @@ p{
     margin-top: 20px;
 }
 
+
+
 .section-contact{
-    background-color: rgb(248, 248, 248);
-    color: grey;
-    display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  background-color:rgb(248, 248, 248);
+  color: grey;
+  width: 100%;
 }
 
 .contact-me-container{
-    display: block; 
-    
+    display: flex;
+    align-items: center;
+
+
 }
 
-.social-container{
+.contact-card{
+    background-color: white;
+    border-radius: 8px;
+    padding: 100px;
+    border: #CA1F7B;
+    border-style: double;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+
+.form-container{
+    display: block;
+    margin-top: 0em;
+}
+
+.form-inline{
     display: flex;
 }
 
+.form-input{
+    margin-bottom: 15px;
+    flex-grow: 1;
+    position: relative;
+    text-align: left;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+    margin-top: 5px;
+    justify-content: left;
+    font-size: 20px;
+}
+
+input, textarea {
+    border: 0;
+    border-radius: 20px;
+    background-color: #f6f7fb;
+    border: 1px solid #f6f7fb;
+    font-size: var(--text-sm);
+    padding: 10px 15px;
+    display: block;
+    width: 100%;
+    outline: none;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: 0.2s;
+    color: grey;
+}
+
+.send-button{
+    border-radius: 100px;
+    color: white;
+    background-color: #CA1F7B;
+    font-size: 20px;
+    font-weight:800;
+    letter-spacing: 2px;
+    padding: 15px 40px;
+    margin-top: 15px;
+    border-color: none;
+}
+
+
+
+footer{
+    width: 100%;
+    padding-bottom: 5px;
+    box-shadow: 0 0 29px rgba(134, 134, 134,0.25);
+    top: 0;
+    background-color: white;
+    font-size: large;
+    color: white;
+    font-family: Handlee;
+}
+
+.footer-list{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 0 50px;
+    width: 100%;
+    list-style: none;
+}
+
+.footer-list .nav-item a{
+    color: #CA1F7B;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.social-icons .small > li{
+    display: inline-block;
+    margin: 0.15em;
+    position: relative;
+    font-size: 0.5em !important;
+}
