@@ -27,6 +27,7 @@ header {
     font-size: large;
     color: grey;
     font-size: 1.2em;
+    z-index: 1;
 }
 
 .nav-bar {
