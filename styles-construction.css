@@ -1,0 +1,59 @@
+@import url('https://fonts.cdnfonts.com/css/agency-fb');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Agency FB';
+    justify-content: center;
+    align-items: center;
+}
+
+.web-construction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 110px 40px 130px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+
+}
+
+@media (max-width: 970px) {
+    .web-construction {
+        padding: 80px 20px;
+    }
+
+   
+}
+
+.area-presentation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p{
+    font-size: 5rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 800;
+    text-align: center;
+    color: #CA1F7B;
+}
+
+@media (max-width: 970px) {
+    p{font-size: 4rem;
+    }
+}
+
+img {
+    max-width: 80%;
+}

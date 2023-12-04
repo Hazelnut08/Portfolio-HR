@@ -3,26 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="media-icons.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portfolio_Hazel</title>
+    <link rel="icon" type="image/png" href="Icons/favicon.png" />
+    <title>My Portfolio</title>
 </head>
 
 <body>
     <!--Here star the header of the site, dont forget apply "possition:fixed" to have a sticky bar-->
     <header>
         <div class="nav-bar">
-            <div class="logo">
-                <img src="" alt="">
-            </div>
             <nav class="menu-container">
                 <ul class="nav-list">
                     <li class="nav-item"> <a href="#about">ABOUT</a></li>
                     <li class="nav-item"> <a href="#knowledge">KNOWLEDGE</a></li>
                     <li class="nav-item"> <a href="#projects">PROJECTS</a></li>
-                    <li class="nav-item button"><a href="#contact">CONTACT</a></li>
+                    <li class="nav-item button"><a href="#contact"><span>CONTACT</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -31,7 +29,7 @@
 
     <!-- Start the "about" section -->
     <section class="section section-about" id="about">
-        <div class="area-presentation">
+        <div class="column area-presentation">
             <div class="about-info">
                 <h1 class="about-name">Hi! I'm
                     <span class="my-name">HAZEL</span>
@@ -39,31 +37,31 @@
                 <p class="about-description">Industrial designer, front end developer and UI/UX designer.
                     Plant and cat lover.
                 </p>
-                <a href="#projects" class="about-button">MY JOB</a>
+                <a href="#projects" class="about-button button">MY JOB</a>
             </div>
-            <img src="Image/designer.svg" alt="" class="about-img" / </div>
+            <img src="Image/designer.svg" alt="" class="about-img">
         </div>
     </section>
     <!-- End of the "about" section-->
 
     <!-- Start the "knowledge" section -->
     <section class="section section-knowledge" id="knowledge">
-        <div class="knowledge-content">
+        <div class="column knowledge-content">
             <h2>My Knowledge</h2>
             <p class="knowledge-description"> During my career I have developed skills in the use of the following
                 programs and tools</p>
             <div class="grid skills-grid">
-                <div class="skill-item">
+                <div class=" skill skill-item">
                     <i class="devicon-html5-plain colored"></i>
                     <span class="item-name">HTML 5</span>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill skill-item">
                     <i class="devicon-css3-plain colored"></i>
                     <span class="item-name">CSS 3</span>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill skill-item">
                     <i class="devicon-sass-original colored"></i>
                     <span class="item-name">Sass</span>
                 </div>
@@ -99,14 +97,15 @@
                 </div>
 
             </div>
+        </div>
     </section>
     <!-- End the "knowledge" section -->
 
     <!-- Start the "phrase" section -->
     <section class="section section-phrase" id="phrase">
-        <div>
+        <div class="column">
             <!--https://www.flaticon.es/icono-gratis/mandala_8341108?term=mandala&page=1&position=2&origin=search&related_id=8341108-->
-            <img class="icon-ph" src="Icons/flor-de-loto (1).png" alt="Hands-Flower">
+            <img class="icon-ph" src="Icons/flor-de-loto.png" alt="Hands-Flower">
             <p class="phrase">"Every day we have the opportunity to choose something different and be happy..."</p>
         </div>
     </section>
@@ -142,7 +141,7 @@
 
 
             <a class="project" href="construction.html">
-                <img src="Image/meeting_ manager.svg" alt="meeting_manager">
+                <img src="Image/meeting_manager.svg" alt="meeting_manager">
                 <span class="project-name">Meeting Manager</span>
             </a>
 
@@ -170,8 +169,7 @@
                     <h2 class="contact-title">Contact me!</h2>
                     <p class="contact-paragraph">If you liked my work and if you want to know a little more,
                         don't hesitate to contact me!</p>
-                    <!--icons:https://iconos8.es/icons/set/linkedin--static--c-ca1f7b
-            https://fontawesome.com/icons/square-x-twitter?f=brands&s=solid&pc=%23ca1f7b-->
+
                     <div class="social-container">
                         <ul class="social-icons">
                             <li><a href="https://twitter.com/HazelGrr"><i class="fa fa-twitter"></i></a></li>
@@ -188,26 +186,25 @@
             <div class="form-container">
                 <h2 class="form-title">Write me!</h2>
 
-                <div class="form-inline">
-                    <div class="form-input">
-                        <label for="first-name">Name</label>
-                        <input type="text" name="fist-name" placeholder="Your name here">
-                    </div>
-                    <div class="form-input">
-                        <label for="last-name">Last name</label>
-                        <input type="text" name="last-name" id="" placeholder="Your lastname here">
-                    </div>
+                <div class="form-input">
+                    <label for="firstName">Name</label>
+                    <input type="text" name="fist-name" id="firstName" placeholder="Your name here">
+                </div>
+
+                <div class="form-input">
+                    <label for="lastName">Last name</label>
+                    <input type="text" name="last-name" id="lastName" placeholder="Your lastname here">
                 </div>
 
                 <div class="form-input">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="" placeholder="Your email here">
+                    <input type="email" name="email" id="email" placeholder="Your email here">
                 </div>
 
                 <div class="form-input">
-                    <label for="text-area">Message</label>
-                    <textarea name="text-area" id="" cols="30" rows="10">Write your message here</textarea>
-                    <button class="send-button">SEND</button>
+                    <label for="message">Message</label>
+                    <textarea name="text-area" id="message" cols="30" rows="10">Write your message here</textarea>
+                    <button class="send-button button">SEND</button>
                 </div>
             </div>
         </div>
@@ -217,9 +214,6 @@
     <!-- Start the "footer" section -->
     <footer>
         <div class="nav_bar">
-            <div class="logo">
-                <img src="" alt="">
-            </div>
             <nav class="menu-container">
                 <ul class="footer-list">
                     <li class="nav-item"> <a href="#about">ABOUT</a></li>
@@ -229,8 +223,6 @@
                 </ul>
             </nav>
         </div>
-
-
         <div class="social-container">
             <ul class="social-icons">
                 <li><a href="https://twitter.com/HazelGrr"><i class="fa fa-twitter"></i></a></li>
@@ -242,6 +234,7 @@
         </div>
     </footer>
     <!-- End the "footer" section -->
+
 </body>
 
 </html>
