@@ -222,6 +222,13 @@ h2 {
     width: 260px;
 }
 
+.skill-item:hover{
+    border-color: #CA1F7B;
+    color: #CA1F7B;
+    box-shadow: 0 0 29px rgba(134, 134, 134, 0.25);
+}
+
+
 .skill-item i {
     font-size: 7rem;
     margin-top: 24px;
@@ -276,6 +283,13 @@ h2 {
     border-radius: 8px;
     padding: 2em;
 }
+
+.project:hover{
+    border-color: #CA1F7B;
+    color: #CA1F7B;
+    box-shadow: 0 0 29px rgba(134, 134, 134, 0.25);
+}
+
 
 @media (max-width: 1300px) {
     .project {
